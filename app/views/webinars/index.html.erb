@@ -1,0 +1,440 @@
+
+
+   <!-- SIDEBAR
+    ============================== -->
+   <!-- WRAPPER
+    ============================== -->
+   <div class="wrapper  hero_sign-up">
+      <img src="assets/logo_large500x_out.png" class="img-logo hidden-xs" />
+      <div class="section" id="team">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+                  <h4 class="heading">мероприятия</h4>
+               </div>
+            </div>             
+            <!-- / .row -->
+            <div class="row">
+               <div class="col-sm-4" style="background:white; padding-top:20px; padding-bottom:-20px; border-radius:10px; overflow:hidden; margin:10px; ">
+                  <div class="corner-ribbon top-left red shadow" style="; z-index:1;">Завершено</div>
+                  <div class="team__item" style="opacity:0.5">
+                     <h4 class="heading heading_title">правовые аспекты электронной коммерции<br><br></h4>
+                     <div class="team-item__img">
+                        <img src="assets/team_2.jpg" class="img-responsive" alt="...">
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="team-item__name">14 ИЮЛЯ</div>
+                           <div class="team-item__position">КИЕВ</div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="team-item__contact">
+                              <strong style="font-size:22px">18.10</strong>
+                              <div class="clearfix"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row" style="text-align:center">
+                        <a class="btn btn-primary" href="http://webinar.baturinets.com/bm">ПОДРОБНЕЕ</a>
+                     </div>                      
+                     <!-- / .row -->
+                  </div>                   
+                  <!-- / .team__item -->                   
+               </div>
+               <div class="col-sm-4 margin_column" style="background:white; padding-top:20px; padding-bottom:-20px; border-radius: 10px; margin: 10px; overflow:hidden;">
+                  <div class="team__item">
+                     <h4 class="heading heading_title"><%= @webinar.name %></h4>
+                     <div class="team-item__img">
+                        <img src="assets/team_2.jpg" class="img-responsive" alt="...">
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="team-item__name"><%= @webinar.data %></div>
+                           <div class="team-item__position"><%= @webinar.city %></div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="team-item__contact">
+                              <strong style="font-size:22px"><%= @webinar.time %></strong>
+                              <div class="clearfix"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row" style="text-align:center">
+                        <a class="btn btn-primary" href="<%= webinars_show_path(@webinar) %>">ПОДРОБНЕЕ</a>
+                     </div>                      
+                     <!-- / .row -->
+                  </div>                   
+                  <!-- / .team__item -->                   
+               </div>
+               <div class="col-sm-4 margin_column" style="background:white; padding-top:20px; padding-bottom:-20px; border-radius: 10px; margin:10px; overflow:hidden;">
+                  <div class="team__item">
+                     <h4 class="heading heading_title">ИНТЕЛЛЕКТУАЛЬНАЯ СОБСТВЕННОСТЬ HARDWARE-СТАРТАПА</h4>
+                     <div class="team-item__img">
+                        <img src="assets/team_2.jpg" class="img-responsive" alt="...">
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="team-item__name">17 АВГУСТА</div>
+                           <div class="team-item__position">КИЕВ</div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="team-item__contact">
+                              <strong style="font-size:22px">19.00</strong>
+                              <div class="clearfix"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row" style="text-align:center">
+                        <a class="btn btn-primary" href="<%= webinars_show_path(@webinar.id) %>">ПОДРОБНЕЕ</a>
+                     </div>                      
+                     <!-- / .row -->
+                  </div>                   
+                  <!-- / .team__item -->                   
+               </div>
+            </div>             
+            <!-- / .row -->
+         </div>          
+         <!-- / .container -->
+      </div>
+      <!-- NAVBAR ============================== -->
+      <!-- HERO
+      ============================== -->
+      <!-- / .hero -->
+      <!-- / .section -->
+      <!-- / .section -->
+      <!-- PORTFOLIO
+      ============================== -->
+      <!-- / .section -->
+      <!-- DOWNLOAD
+      ============================== -->
+      <!-- / .section -->
+      <!-- PRICING
+      ============================== -->
+      <!-- / .section -->
+      <!-- TEAM
+      ============================== -->
+      <!-- / .section -->
+      <!-- SKILLS
+      ============================== -->
+      <!-- / .section -->
+      <!-- TESTIMONIALS
+      ============================== -->
+      <!-- SUBSCRIBE
+      ============================== -->
+      <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog" name="myModal" style="display: none;" aria-hidden="true">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title">Заявка отправлена!</h4>
+               </div>
+               <div class="modal-body">
+                  <p>Благодарим за регистрацию на онлайн-семинаре:</p>
+                  <strong><h4 style="text-align:center; margin-bottom:-16px">“Как аутсорсу создать эффективную международную компанию и гарантированно сохранить валютную выручку”</h4></strong>
+                  <p><br>
+      					который состоится <strong>08 июля в 19.00</strong> 
+      (по Киеву).<br>
+                        Инструкции для участия в онлайн-семинаре вы получите на <strong>e-mail</strong>.<br>
+                        Стоимость участия в вебинаре: </p>
+                  <div id="20dollars" style="text-align:center;">
+                     <strong><h4 style="text-align:center;">БЕСПЛАТНО</h4></strong>
+                  </div>
+                  <p>
+   						Сегодня Вы можете получить от нас еще один бонус.<br>
+						Мы предлагаем Skype консультацию от наших юристов со скидкой 50%.<br>
+						Обычная цена $100, сегодня Вы можете ее получить за $50.<br></p>
+                  <h4>В ходе консультации:</h4>
+                  <ul class="main-page-list">
+                     <li class="text-left list-decoration">Будет проанализирована ситуация в вашем бизнесе;</li>
+                     <li class="text-left list-decoration">Вы получите четкое понимание того какие выгоды вы получите при использовании нерезидентной компании, конкретно в Вашем случае и как может быть реализован этот проект;</li>
+                     <li class="text-left list-decoration">Мы ответим подробно на все интересующие Вас вопросы.</li>
+                  </ul>
+                  <br>
+                  <div class="text-center">
+                     <button class="btn btn-skype" type="button" id="ButtonSkypeConsult" onclick="_gaq.push(['_trackEvent', 'Заказать_Скайп', 'Participate_button', 'Title_of_button'])">Заказать консультацию</button>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default btn-modal-close" data-dismiss="modal">Закрыть</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="myModal2" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title">ОШИБКА</h4>
+               </div>
+               <div class="modal-body">
+                  <p>Проверьте правильность заполнения формы.<br>
+                        Все поля обязательны к заполнению!<br></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- / .section -->
+      <!-- CONTACT US
+      ============================== -->
+      <!-- / .container -->
+      <!-- FOOTER
+      ============================== -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-4">
+                  © 2015 Baturinets &amp; Partners
+</div>
+               <div class="col-sm-4" "">
+                  <div class="footer__social" style="text-align:center">
+                     <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwebinar.baturinets.com&amp;text=:%20http%3A%2F%2Fwebinar.baturinets.com" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;" class="footer-social__link footer-social__link_twitter"><i class="fa fa-twitter" style="margin-top:8px"></i></a>
+                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwebinar.baturinets.com&amp;t=" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&amp;t=' + encodeURIComponent(document.URL)); return false;" class="footer-social__link footer-social__link_facebook"><i class="fa fa-facebook" style="margin-top:8px"></i></a>
+                     <a href="https://plus.google.com/share?url=http%3A%2F%2Fwebinar.baturinets.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;" class="footer-social__link footer-social__link_google-plus"><i class="fa fa-google-plus" style="margin-top:8px"></i></a>
+                  </div>
+               </div>
+               <div class="col-sm-4"> 
+                  <a class="copyright" href="mailto:webinar@baturinets.com?Subject=Вебинар" target="_top" onclick="_gaq.push(['_trackEvent', 'footer_email', 'Participate_button', 'Title_of_button']);">E-mail: webinar@baturinets.com</a>
+                  <br>
+                  <a class="copyright" href="tel:+380444999792" onclick="_gaq.push(['_trackEvent', 'footer_380444999792', 'Participate_button', 'Title_of_button']);">☎ +380444999792</a>
+                  <br>
+                  <a class="copyright" href="tel:+380674672167" onclick="_gaq.push(['_trackEvent', 'footer_380674672167', 'Participate_button', 'Title_of_button']);">☎ +380674672167</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <!-- / .wrapper -->
+   <!-- JavaScript
+    ================================================== -->
+   <!-- JS Global -->
+   <script type="text/javascript" async="" src="recaptcha/api2/r20150604090638/recaptcha__en.js">
+</script>
+   <script src="ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript">
+</script>
+   <script src="recaptcha/api.js" type="text/javascript">
+</script>
+   <script src="js/bootstrap/bootstrap.min.js" type="text/javascript">
+</script>
+   <!-- JS Plugins -->
+   <script src="js/plugins/smoothscroll.js" type="text/javascript">
+</script>
+   <script src="js/plugins/jquery.waypoints.min.js" type="text/javascript">
+</script>
+   <script src="js/plugins/wow.min.js" type="text/javascript">
+</script>
+   <script src="js/plugins/owl.carousel.min.js" type="text/javascript">
+</script>
+   <script src="js/plugins/jquery.peity.min.js" type="text/javascript">
+</script>
+   <script src="js/plugins/lightbox.min.js" type="text/javascript">
+</script>
+   <script src="js/plugins/contact.js" type="text/javascript">
+</script>
+   <!-- Time circle -->
+   <!-- JS Custom -->
+   <script src="/assets/custom.js" type="text/javascript">
+</script>
+   <script src="js/classie.js" type="text/javascript">
+</script>
+   <script src="js/modalEffects.js" type="text/javascript">
+</script>
+   <!-- Form Validation -->
+   <script src="js/validator.js" type="text/javascript">
+</script>
+   <script src="js/validator.min.js" type="text/javascript">
+</script>
+   <script type="text/javascript">
+var wow = new WOW(
+          {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       30,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         false,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+              // the callback is fired every time an animation is started
+              // the argument that is passed in is the DOM node being animated
+            }
+        }
+    );
+        wow.init();
+    </script>
+   <!-- TimeCircles JavaScript -->
+   <script type="text/javascript" src="js/TimeCircles.js">
+</script>
+   <script type="text/javascript" src="js/dateformat.js">
+</script>
+   <script type="text/javascript">
+      
+          var timer;
+            $(function(){
+                timer = $("#DateCountdown").attr('data-date', getFinishDate()).TimeCircles({
+                    direction: "Clockwise",
+                    count_past_zero: false
+                });
+                timer.start();
+                
+                // if timer elapsed
+                if(timer.getTime() <= 0){
+                    $("#price").html("К сожалению, с вашего первого визита прошло более 24х часов. Таймер истек и текущая стоимость:<br><strong>100$<\/strong>");
+                    
+                    
+                    $("#entry_1644485930").val("100$");
+                    $("#entry_1806617084").val("Батуринец и партнеры");
+                    
+                    
+                    $("#20dollars").html("<span style='height:50px'> <a href='https://www.liqpay.com/api/checkout?data=eyJ2ZXJzaW9uIjozLCJwdWJsaWNfa2V5IjoiaTI2MjYzMjM0MDQ1IiwiYW1vdW50IjoiMTAwIiwiY3VycmVuY3kiOiJVU0QiLCJkZXNjcmlwdGlvbiI6ItCj0YfQsNGB0YLQuNC1INCyINCy0LXQsdC40L3QsNGA0LUgMDguMDcuMjAxNSIsInR5cGUiOiJidXkiLCJsYW5ndWFnZSI6InJ1IiwicGF5X3dheSI6ImNhcmQscHJpdmF0MjQifQ%3D%3D&signature=JBE7fziU%2B%2FGrQuAeiA7bx7RDbUI%3D'><img style='padding-bottom: 20px'  src='assets/pay40.png'><\/a><\/span>");
+                }
+                
+                // listen even tick
+                timer.addListener (function(unit, value, total){
+                    if(total <= 0){
+                        $("#price").html("К сожалению, с вашего первого визита прошло более 24х часов. Таймер истек и текущая стоимость:<br><strong>100$<\/strong>");
+                        
+                    $("#entry_1644485930").val("100$");
+                    $("#entry_1806617084").val("Батуринец и партнеры");
+                        
+                        $("#20dollars").html("<span> <a href='https://www.liqpay.com/api/checkout?data=eyJ2ZXJzaW9uIjozLCJwdWJsaWNfa2V5IjoiaTI2MjYzMjM0MDQ1IiwiYW1vdW50IjoiMTAwIiwiY3VycmVuY3kiOiJVU0QiLCJkZXNjcmlwdGlvbiI6ItCj0YfQsNGB0YLQuNC1INCyINCy0LXQsdC40L3QsNGA0LUgMDguMDcuMjAxNSIsInR5cGUiOiJidXkiLCJsYW5ndWFnZSI6InJ1IiwicGF5X3dheSI6ImNhcmQscHJpdmF0MjQifQ%3D%3D&signature=JBE7fziU%2B%2FGrQuAeiA7bx7RDbUI%3D'><img style='padding-bottom: 20px'  src='assets/pay40.png'><\/a><\/span>");
+                    }
+                });
+            });
+            
+               // get stored date from local storage
+               // store current date if not exists
+               function getFinishDate() {
+                
+                var today     = new Date();
+                var daysAfterToday   = 1;
+                var tomorrow;
+                
+                // is browser support local storage
+                if(typeof(Storage) !== "undefined") {
+                 // if don't have stored value
+                 if(!localStorage.visitAt20150707_autsource){
+                  localStorage.visitAt20150707_autsource = today;
+                 }
+            
+                 
+                 tomorrow    = new Date(localStorage.visitAt20150707_autsource);
+                 // add 3 days
+                 tomorrow.setDate(tomorrow.getDate() + daysAfterToday);
+                      
+                 return dateToString(tomorrow);
+                } else {
+                 console.log("Sorry, your browser does not support web storage...");
+                 
+                 tomorrow = new Date(today);
+                 tomorrow.setDate(today.getDate() + daysAfterToday);
+                 return dateToString(tomorrow);
+                }
+               }
+            
+            function dateToString(date){
+                return date.format("yyyy-mm-dd HH:MM") + ":00";
+            }
+            
+    </script>
+   <script>
+		document.getElementById('ButtonSubmit').onclick = function() {
+				var name = $('#Name').val();
+	            var phone = $('#Phone').val();
+	            var email = $('#Email').val();
+				var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+				var phoneFilter = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+				
+	
+				
+				
+				
+			
+		    if (
+		    $('#Name').val() == '' 		|| 
+		    $('#Phone').val() == '' 	|| 
+		    $('#Email').val() == '' 	||
+		    filter.test(email) == false ||
+		    phoneFilter.test(phone) == false
+		    
+		    ) 
+		    {
+				$("#myModal2").modal();
+		    } else {
+			    $.ajax(
+			                {
+			                    url: "https://docs.google.com/a/bp.ua/forms/d/1q6PDifPC6D0z6yo6M_wXt5RqflKc4xlQLZRtBRggkZg/formResponse",
+			                    data: 
+			                    { 
+			                            "entry_415927885":name, 
+			                            "entry_1391621777":phone,
+			                            "entry_1064284778":email,
+			                             
+			                    },
+			                    type: "POST",
+			                    dataType: "xml",
+			                    
+			                });
+
+				
+				$("#myModal").modal();
+		    }
+		    return false;
+		}
+	</script>
+   <script>
+		document.getElementById('ButtonSkypeConsult').onclick = function() {
+				var name = $('#Name').val();
+	            var phone = $('#Phone').val();
+	            var email = $('#Email').val();
+	            var participate = "Хочу консультацию";
+					$.ajax(
+			                {
+			                    url: "https://docs.google.com/a/bp.ua/forms/d/1q6PDifPC6D0z6yo6M_wXt5RqflKc4xlQLZRtBRggkZg/formResponse",
+			                    data: 
+			                    { 
+			                            "entry_377451746":participate,
+			                            "entry_415927885":name, 
+			                            "entry_1391621777":phone,
+			                            "entry_1064284778":email,
+			                    },
+			                    type: "POST",
+			                    dataType: "xml",
+			                    
+			                });
+
+					
+					document.getElementById("ButtonSkypeConsult").style["background-color"] = "rgba(14, 171, 86, 0.76)";
+					document.getElementById("ButtonSkypeConsult").style["border-color"] = "rgba(14, 171, 86, 0.76)";
+					$("#ButtonSkypeConsult").html("Спасибо!");
+					$('#ButtonSkypeConsult').removeClass('hvr-grow');
+					$('#ButtonSkypeConsult').addClass('animated flip');
+
+
+
+					
+					
+		}
+	</script>
+   <script>
+		$('#myModal').on('hidden.bs.modal', function (e) {
+ 					document.getElementById("Name").value = "";
+ 					document.getElementById("Phone").value = "";
+ 					document.getElementById("Email").value = "";
+ 					document.getElementById('formReplace').innerHTML = "<plashka id='plashka' class='plashka wow fadeIn animated' data-wow-duration='2s'> ✓ Заявка отправлена</plashka>";
+ 					$('#plashka').addClass('plashka');
+		});
+	</script>
+   <script>
+		window.onbeforeunload = function()
+		{
+			window.scrollTo(0,0);
+		}
+	</script>
+   <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+   <div id="lightboxOverlay" class="lightboxOverlay"></div>
+</body>

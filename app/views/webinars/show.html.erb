@@ -1,0 +1,900 @@
+<!--      <html lang="en">
+   <head>
+      <!-- Time circle -->
+ 
+      <!-- CSS Custom -->
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--      <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20150604090638/recaptcha__en.js"></script>
+      <script src="_/scs/apps-static/_/js/k=oz.gapi.en.xNuxrwx2usY.O/m=gapi_iframes,gapi_iframes_style_common/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCPVim02GafD5jiSY6KQI1QSc0tEVA/t=zcms/cb=gapi.loaded_0" async="" type="text/javascript">
+</script>
+      <script type="text/javascript" src="d4c7eff7/js/injected.js">
+</script>
+      <style type="text/css"></style>
+      <script type="text/javascript" charset="UTF-8" src="js/api.js" gapi_processed="true">
+</script>
+      <script type="text/javascript" src="safari-extension://com.stefanvd.turnoffthelights-PRR97757HF/f17e02db/js/injected.js"></script>
+      <script type="text/javascript">
+
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-43247709-6']);
+              _gaq.push(['_trackPageview']);
+            
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+
+    </script>
+   </head>
+   <body data-spy="scroll" data-target=".navbar" data-offset="71" class="">-->
+      <!-- SIDEBAR
+    ============================== -->
+      <div class="sidebar">
+         <div class="sidebar__wrapper">
+            <div class="sidebar__close js-toggle-sidebar visible-xs"></div>
+            <div class="sidebar__form form_alt">
+               <form>
+                  <div class="form-group">
+                     <label class="sr-only" for="login__username">Username</label>                      
+                     <input type="text" class="form-control" id="login__username" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                     <label class="sr-only" for="login__password">Password</label>                      
+                     <input type="password" class="form-control" id="login__password" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-block btn-primary">Sign In</button>
+               </form>
+            </div>
+            <h4 class="sidebar__heading">1</h4>
+            <ul class="sidebar__menu">
+               <li>
+                  <a href="index_agency.html">2</a>
+               </li>
+               <li>
+                  <a href="index_app.html">3</a>
+               </li>
+               <li>
+                  <a href="index_sign-up.html">4 Up</a>
+               </li>
+            </ul>
+            <h4 class="sidebar__heading">5 pages</h4>
+            <ul class="sidebar__menu">
+               <li>
+                  <a href="sign-in.html">6 In</a>
+               </li>
+               <li>
+                  <a href="sign-up.html">7 Up</a>
+               </li>
+               <li>
+                  <a href="coming-soon.html">8 Soon</a>
+               </li>
+            </ul>
+            <div class="sidebar__logo">
+               
+</div>
+         </div>
+      </div>
+      <!-- WRAPPER
+    ============================== -->
+      <div class="wrapper">
+         <nav class="navbar navbar-fixed-top js-toggleClass js-navbar-top navbar-default">
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#home"><%= @webinar.data %> | <%= @webinar.time %></a>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                  <ul class="nav navbar-nav navbar-right ">
+                     <li class="">
+                        <a href="#result">Результат</a>
+                     </li>
+                     <li class="">
+                        <a href="#about">Для кого</a>
+                     </li>
+                     <li class="">
+                        <a href="#program">Программа</a>
+                     </li>
+                     <li class="">
+                        <a href="#format">Формат</a>
+                     </li>
+                     <li class="hidden-xs">
+                        <p class="navbar-text navbar__separator"></p>
+                     </li>
+                     <li class="hidden-xs visible-desktop hidden-sm hidden-md visible-lg">
+                        <a style="height:20px; padding:0px;  margin-bottom:-23px;" href="mailto:webinar@baturinets.com?Subject=Вебинар" target="_top" onclick="_gaq.push(['_trackEvent', 'header_email', 'Participate_button', 'Title_of_button']);">E-mail: webinar@baturinets.com</a>
+                        <br>
+                        <a style="height:20px; padding:0px; margin-bottom:-23px;" href="tel:+380444999792" onclick="_gaq.push(['_trackEvent', 'header_380444999792', 'Participate_button', 'Title_of_button']);">☎ +380444999792</a>
+                        <br>
+                        <a style="height:10px; padding:0px; " href="tel:+380674672167" onclick="_gaq.push(['_trackEvent', 'header_380674672167', 'Participate_button', 'Title_of_button'])">☎ +380674672167</a>
+                     </li>
+                  </ul>
+               </div>
+               <!--/.nav-collapse -->
+            </div>
+         </nav>
+         <div class="hero hero_sign-up" id="home">
+            <div class="container container_top">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <p class="heading__sub hero-heading__sub animated fadeInUp delay_1"><%= @webinar.subname %><br></p>
+                     <!-- Hero heading -->
+                     <h1 class="heading hero__heading animated fadeInUp" style="padding-bottom: 40px"><%= @webinar.name %><br></h1>
+<!--                      <p class="heading__sub animated fadeInUp delay_2 hero-heading__sub__sub" style="text-transform: uppercase; color: #565656; font-weight: 700">Встречу проведет юрист <a style="color: -webkit-focus-ring-color"> Василий Поп-Стасив </a>совместно с <a style="color: -webkit-focus-ring-color">Дмитрием «def» Лемещуком</a>, игроком команды  ACG.<br></p> -->
+                     <!-- Hero subheading -->
+                  </div>
+               </div>
+               <!-- / .row -->
+            </div>
+            <!-- / .container -->
+            <!-- Hero form -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-5">
+                     <div class="embed-container">
+                        <%= @webinar.link_to_video.html_safe %>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h3 class="h3" style="text-transform: uppercase">В ходе мероприятия Вы узнаете:</h3>
+                     <ul class="main-page-list ul" style="font-size:15px">
+                        <li class="text-left list-decoration li">Как и где зарегистрировать компанию для SAAS-проекта.</li>
+                        <li class="text-left list-decoration li">Особенности налогообложения SAAS-проектов и варианты оптимизации налогообложения.</li>
+                        <li class="text-left list-decoration li">Какие варианты отношений могут быть между акционерами компании.</li>
+                        <li class="text-left list-decoration li">Как защитить интеллектуальную собственность SAAS-проекта.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-5" style="height:150px;">
+                     <p id="price" class="description text-center p-home">Успейте забронировать бесплатное участие, пока таймер не закончил свой отсчет<br><s style="color:red">100$</s> ⇒<strong>Бесплатно</strong></p>
+                  </div>
+                  <div class="col-md-7 text-center">
+                     <div id="DateCountdown" style="height:150px" class="text-center center_timer" data-date="2015-07-04 17:08:00" data-tc-id="5f417ab8-dc21-54bd-2862-65c8509f151e">
+                        <div class="time_circles">
+                           <canvas width="653" height="150"></canvas>
+                           <div class="textDiv_Hours" style="top: 53px; left: 0px; width: 150px;">
+                              <h4 style="font-size: 11px; line-height: 11px;">Часов</h4>
+                              <span style="font-size: 32px; line-height: 11px;">1</span>
+                           </div>
+                           <div class="textDiv_Minutes" style="top: 53px; left: 150px; width: 150px;">
+                              <h4 style="font-size: 11px; line-height: 11px;">Минут</h4>
+                              <span style="font-size: 32px; line-height: 11px;">1</span>
+                           </div>
+                           <div class="textDiv_Seconds" style="top: 53px; left: 300px; width: 150px;">
+                              <h4 style="font-size: 11px; line-height: 11px;">Секунд</h4>
+                              <span style="font-size: 32px; line-height: 11px;">9</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- / .row -->
+            </div>
+            <form class="form-inline hero__form" data-toggle="validator" role="form" novalidate="true">
+               <div class="container" id="formReplace">
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <form id="myForm" data-toggle="validator" role="form">
+                           <div class="form-group">
+                              <input type="text" class="form-control input-lg" id="Name" name="Name" placeholder="ФИО" value="" data-error="Введите ФИО" required>
+                              <span class="help-block with-errors">Укажите ФИО</span>
+                           </div>
+                           <div class="form-group">
+                              <input type="tel" min="9" class="form-control input-lg" id="Phone" name="Phone" placeholder="Телефон" value="" data-error="Введите номер телефона" required>
+                              <span class="help-block with-errors">Укажите Ваш номер телефону</span>
+                           </div>
+                           <div class="form-group">
+                              <input type="email" class="form-control input-lg" id="Email" name="Email" placeholder="Email" value="" data-error="Введите корректный email" required>
+                              <div class="help-block with-errors"></div>
+                           </div>
+                           <div class="form-group">
+                              <button type="button" class="btn btn-primary" id="ButtonSubmit" onclick="_gaq.push(['_trackEvent', 'Зареєструватись', 'Participate_button', 'Title_of_button'])">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-12">
+					 	<div class="hero-form__sign-in animated  infinite" style="font-size:1.3em; color: rgba(0,0,0,0.6); display:inline-block;">
+                              Сразу после регистрации Вы получите от нас бесплатный бонус - <br><a style="color: #3B99fb; text-decoration: none">“Полный перечень информации, которую должен содержать сайт SAAS-проекта”</a>,<br> такую информацию вы не найдете в интернете в открытом доступе.                                                                                                                                                                                                                                                                                                                                                                     
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <!-- / .conatiner -->
+         </div>
+         <div class="section" id="result" style="display:block;">
+            <!-- ABOUT
+        ============================== -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+<!--                      <h4 style="text-align:center; margin-bottom:px; background-color:#ffcc66; border-radius:9px; padding:15px">Вы можете <strong>бесплатно</strong> принять у частие в мероприятии в живую по адресу: г.Киев, Бессарабская площадь, ТЦ Метроград, клуб <a href="http://cyberzone.kiev.ua/Karta-proezda-i5" style="color:#48b359;text-decoration:underline;" target="_blank">Сyberzone</a> </h4> -->
+                     <h4 class="heading">ваш результат</h4>
+                  </div>
+               </div>
+               <!-- / .row -->
+            </div>
+            <!-- / .container -->
+            <!-- FEATURES
+        ============================== -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                     <div class="features__item wow fadeIn animated animated" data-wow-offset="43" style="visibility: visible; -webkit-animation: none;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-level-up"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">Вы получите алгоритм подбора юрисдикции для SAAS-проекта.</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-8 col-sm-offset-2">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="43" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-money"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">Узнаете как можно оптимизировать налоги.</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-8 col-sm-offset-2">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="43" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-users "></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">Получите механизмы регуляции отношений между акционерами.</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-8 col-sm-offset-2">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="43" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-life-ring"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">Научитесь определять какую часть интеллектуальной собственности необходимо защищать в Вашем проекте.</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  
+               </div>
+               <!-- / .row -->
+            </div>
+            <!-- / .container -->
+         </div>
+         <!-- NAVBAR ============================== -->
+         <!-- HERO
+      ============================== -->
+         <!-- / .hero -->
+         <div class="section" id="about" style="display:block;">
+            <!-- ABOUT
+        ============================== -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <h4 class="heading">для кого этот семинар</h4>
+                  </div>
+               </div>
+               <!-- / .row -->
+            </div>
+            <!-- / .container -->
+            <!-- FEATURES
+        ============================== -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-3 hvr-grow">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="112" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-gamepad"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">Для команд</div>
+                           <div class="features-item-body__summary" style="text-transform: uppercase">разработчиков облачных сервисов</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-3 hvr-grow">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="89" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-users"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">Для руководителей
+                              <br>
+                           </div>
+                           <div class="features-item-body__summary" tyle="text-transform: uppercase"> SAAS-проектов</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-3 hvr-grow">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="112" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-user"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">Для акционеров</div>
+                           <div class="features-item-body__summary" tyle="text-transform: uppercase">SAAS-проектов</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-3 hvr-grow">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="112" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-user-plus"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">Для программистов</div>
+                           <div class="features-item-body__summary" tyle="text-transform: uppercase">которые хотят защитить свои права работая над SAAS сервисом</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+               </div>
+               <!-- / .row -->
+            </div>
+            <!-- / .container -->
+         </div>
+         <div class="section" id="program" style="display:block;">
+            <!-- ABOUT
+        ============================== -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <h4 class="heading">ПРОГРАММА СЕМИНАРА</h4>
+                  </div>
+               </div>
+               <!-- / .row -->
+            </div>
+            <!-- / .container -->
+            <!-- FEATURES
+        ============================== -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6 hvr-grow">
+                     <div class="features__item" data-wow-duration="1s" data-wow-offset="112" style="visibility: visible; -webkit-animation: fadeIn;">
+                        <div class="features-item__icon"></div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title text-center">
+                              Где регистрировать компанию 
+                              <br>
+                               для SAAS-проекта
+                           </div>
+                           <ul class="text-left">
+                              <li><span style="line-height: 1.42857143;">&nbsp;Пошаговый алгоритм выбора юрисдикции для регистрации вашей компании.&nbsp;</span><br>
+                              <li><span style="line-height: 1.42857143;">&nbsp;Ошибки при выборе юрисдикции.&nbsp;</span><br></li>
+                              <li><span style="line-height: 1.42857143;">&nbsp;Подбор юрисдикции с учетом особенности вашего бизнеса.&nbsp;</span><br></li>
+                           </ul>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-6 hvr-grow">
+                     <div class="features__item" data-wow-duration="1s" data-wow-offset="112" style="visibility: visible; -webkit-animation: fadeIn;">
+                        <div class="features-item__icon"></div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title text-center">
+                              Налогообложение облака - 
+                              <br>
+                              с чем вы столкнетесь
+                           </div>
+                           <ul class="text-left">
+                              <li><span style="line-height: 1.42857143;">&nbsp;Какие налоги и где вам надо будет платить?&nbsp;</span><br>
+                              <li><span style="line-height: 1.42857143;">&nbsp;Особенности налогообложения SAAS в ЕС.&nbsp;</span><br></li>
+                           </ul>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+               </div>
+               <div class="row">
+	               <div class="col-sm-6 hvr-grow">
+                     <div class="features__item" data-wow-offset="112">
+                        <div class="features-item__icon"></div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title text-center">
+                              Правильное оформление и защита объектов IP в SAAS 
+                              <br>
+                           </div>
+						   <ul class="text-left">
+                              <li><span style="line-height: 1.42857143;">&nbsp;Какие объекты IP в SAAS необходимо защищать.&nbsp;</span><br>
+                              <li><span style="line-height: 1.42857143;">&nbsp;Стратегия защиты объектов IP.&nbsp;</span><br></li>
+                              <li><span style="line-height: 1.42857143;">&nbsp;Зачем защищать интеллектуальную собственность SAAS.&nbsp;</span><br></li>
+                           </ul>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-6 hvr-grow">
+                     <div class="features__item" data-wow-offset="112">
+                        <div class="features-item__icon"></div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title text-center">
+                              Отношения между акционерами 
+                              <br>
+                           </div>
+						   <ul class="text-left">
+                              <li><span style="line-height: 1.42857143;">&nbsp;Зачем необходимо акционерное соглашение.&nbsp;</span><br>
+                              <li><span style="line-height: 1.42857143;">&nbsp;Механизмы предоставления акций компании сотрудникам.&nbsp;</span><br></li>
+                           </ul>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-6 hvr-grow">
+                     <div class="features__item" data-wow-duration="1s" data-wow-offset="112" style="visibility: visible; -webkit-animation: fadeIn;">
+                        <div class="features-item__icon"></div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title text-center">
+                              Какие документы необходимы для SAAS-проекта. 
+                              <br> 
+                           </div>
+                           <ul class="text-left">
+                           </ul>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+               </div>
+<!--
+               <div class="row">
+                  <div class="col-sm-6 hvr-grow">
+                     <div class="features__item" data-wow-offset="112">
+                        <div class="features-item__icon"></div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title text-center">
+                              Правильное оформление и защита объектов IP в SAAS 
+                              <br>
+                           </div>
+						   <ul class="text-left">
+                              <li><span style="line-height: 1.42857143;">&nbsp;Какие объекты IP в SAAS необходимо защищать.&nbsp;</span><br>
+                              <li><span style="line-height: 1.42857143;">&nbsp;Стратегия защиты объектов IP.&nbsp;</span><br></li>
+                              <li><span style="line-height: 1.42857143;">&nbsp;Зачем защищать интеллектуальную собственность SAAS.&nbsp;</span><br></li>
+                           </ul>
+                        </div>
+                        <!-- / .features-item__body -->
+                  <!--   </div>    -->
+                     <!-- / .features__item -->
+            <!--      </div>   -->
+                 
+         <!--      </div>  -->
+
+               <!-- / .row -->
+            </div>
+            <!-- / .container -->
+         </div>
+         <div class="section" id="format" style="display:block;">
+            <!-- ABOUT
+        ============================== -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <h4 class="heading">ФОРМАТ, УСЛОВИЯ И ДЛИТЕЛЬНОСТЬ СЕМИНАРА</h4>
+                  </div>
+               </div>
+               <!-- / .row -->
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-3 hvr-grow">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="43" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="fa fa-clock-o"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">НАЧАЛО 14 АВГУСТА В 19.00
+</div>
+                           <div class="features-item-body__summary">
+</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-3 hvr-grow">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="43" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="oi oi-timer" style="position:relative; top:-10px"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">ДЛИТЕЛЬНОСТЬ - 2 ЧАСА
+</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-3 hvr-grow">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="43" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="oi oi-map-marker" style="position:relative; top:-7px"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">УЧАСТИЕ ИЗ ЛЮБОГО ГОРОДА
+</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+                  <div class="col-sm-3 hvr-grow">
+                     <div class="features__item wow fadeInUp animated animated animated" data-wow-duration="1s" data-wow-offset="43" style="visibility: visible; -webkit-animation: 1s;">
+                        <div class="features-item__icon">
+                           <span class="oi oi-comment-square" style="position:relative; top:-6px"></span>
+                        </div>
+                        <div class="features-item__body">
+                           <div class="features-item-body__title">ВОПРОСЫ И ОТВЕТЫ
+</div>
+                        </div>
+                        <!-- / .features-item__body -->
+                     </div>
+                     <!-- / .features__item -->
+                  </div>
+               </div>
+               <!-- / .row -->
+            </div>
+            <!-- / .container -->
+            <!-- FEATURES
+        ============================== -->
+            <!-- / .container -->
+         </div>
+         <!-- / .section -->
+         <!-- / .section -->
+         <!-- PORTFOLIO
+      ============================== -->
+         <!-- / .section -->
+         <!-- DOWNLOAD
+      ============================== -->
+         <!-- / .section -->
+         <!-- PRICING
+      ============================== -->
+         <!-- / .section -->
+         <!-- TEAM
+      ============================== -->
+         <!-- / .section -->
+         <!-- SKILLS
+      ============================== -->
+         <!-- / .section -->
+         <!-- TESTIMONIALS
+      ============================== -->
+         <!-- SUBSCRIBE
+      ============================== -->
+         <!-- Modal -->
+         <div id="myModal" class="modal fade" role="dialog" name="myModal" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">×</button>
+                     <h4 class="modal-title">Заявка отправлена!</h4>
+                  </div>
+                  <div class="modal-body">
+                     <p>Благодарим за регистрацию на онлайн-семинар:</p>
+                     <strong><h4 style="text-align:center; margin-bottom:-16px">“Ключевые аспекты юридического оформления SAAS-проекта.”</h4></strong>
+                     <p><br>
+      					который состоится <strong>14 августа в 19.00</strong> 
+      (по киевскому времени).<br>
+                        Инструкцию для участия в вебинаре вы получите на <strong>e-mail</strong>.<br>
+                        Стоимость участия: </p>
+                     <div id="20dollars" style="text-align:center;">
+                        <strong><h4 style="text-align:center;">БЕСПЛАТНО</h4></strong>
+                     </div>
+                     <p>
+   						Сегодня Вы можете получить от нас еще один бонус.<br>
+						Мы предлагаем Skype консультацию от наших юристов со скидкой 50%.<br>
+						Обычная цена $100, сегодня Вы можете ее получить за $50.<br></p>
+                     <h4>В ходе консультации:</h4>
+                     <ul class="main-page-list">
+                        <li class="text-left list-decoration">Будет проанализирована ситуация в вашем бизнесе;</li>
+                        <li class="text-left list-decoration">Вы получите четкое понимание того какие выгоды вы получите при использовании нерезидентной компании, конкретно в Вашем случае и как может быть реализован этот проект;</li>
+                        <li class="text-left list-decoration">Мы ответим подробно на все интересующие Вас вопросы.</li>
+                     </ul>
+                     <br>
+                     <div class="text-center">
+                        <button class="btn btn-skype" type="button" id="ButtonSkypeConsult" onclick="_gaq.push(['_trackEvent', 'Заказать_Скайп', 'Participate_button', 'Title_of_button'])">Заказать консультацию</button>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default btn-modal-close" data-dismiss="modal">Закрыть</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="myModal2" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">×</button>
+                     <h4 class="modal-title">ОШИБКА</h4>
+                  </div>
+                  <div class="modal-body">
+                     <p>Проверьте правильность заполнения формы.<br>
+                        Все поля обязательны к заполнению!<br></p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- / .section -->
+         <!-- CONTACT US
+      ============================== -->
+         <!-- / .container -->
+         <!-- FOOTER
+      ============================== -->
+         <footer>
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-4">
+                     © 2015 Baturinets &amp; Partners
+</div>
+                  <div class="col-sm-4"="">
+                     <div class="footer__social" style="text-align:center">
+                        <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwebinar.baturinets.com&amp;text=:%20http%3A%2F%2Fwebinar.baturinets.com" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;" class="footer-social__link footer-social__link_twitter"><i class="fa fa-twitter" style="margin-top:8px"></i></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwebinar.baturinets.com&amp;t=" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&amp;t=' + encodeURIComponent(document.URL)); return false;" class="footer-social__link footer-social__link_facebook"><i class="fa fa-facebook" style="margin-top:8px"></i></a>
+                        <a href="https://plus.google.com/share?url=http%3A%2F%2Fwebinar.baturinets.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;" class="footer-social__link footer-social__link_google-plus"><i class="fa fa-google-plus" style="margin-top:8px"></i></a>
+                     </div>
+                  </div>
+                  <div class="col-sm-4"> 
+                     <a class="copyright" href="mailto:webinar@baturinets.com?Subject=Вебинар" target="_top" onclick="_gaq.push(['_trackEvent', 'footer_email', 'Participate_button', 'Title_of_button']);">E-mail: webinar@baturinets.com</a>
+                     <br>
+                     <a class="copyright" href="tel:+380444999792" onclick="_gaq.push(['_trackEvent', 'footer_380444999792', 'Participate_button', 'Title_of_button']);">☎ +380444999792</a>
+                     <br>
+                     <a class="copyright" href="tel:+380674672167" onclick="_gaq.push(['_trackEvent', 'footer_380674672167', 'Participate_button', 'Title_of_button']);">☎ +380674672167</a>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <!-- / .wrapper -->
+      <!-- JavaScript
+    ================================================== -->
+      <!-- JS Global -->
+      <script type="text/javascript" async="" src="recaptcha/api2/r20150604090638/recaptcha__en.js">
+</script>
+      <script src="ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript">
+</script>
+      <script src="recaptcha/api.js" type="text/javascript">
+</script>
+      <script src="js/bootstrap/bootstrap.min.js" type="text/javascript">
+</script>
+      <!-- JS Plugins -->
+      <script src="js/plugins/smoothscroll.js" type="text/javascript">
+</script>
+      <script src="js/plugins/jquery.waypoints.min.js" type="text/javascript">
+</script>
+      <script src="js/plugins/wow.min.js" type="text/javascript">
+</script>
+      <script src="js/plugins/owl.carousel.min.js" type="text/javascript">
+</script>
+      <script src="js/plugins/jquery.peity.min.js" type="text/javascript">
+</script>
+      <script src="js/plugins/lightbox.min.js" type="text/javascript">
+</script>
+      <script src="js/plugins/contact.js" type="text/javascript">
+</script>
+      <!-- Time circle -->
+      <!-- JS Custom -->
+      <script src="/assets/custom.js" type="text/javascript">
+</script>
+      <script src="js/classie.js" type="text/javascript">
+</script>
+      <script src="js/modalEffects.js" type="text/javascript">
+</script>
+      <!-- Form Validation -->
+      <script src="js/validator.js" type="text/javascript">
+</script>
+      <script src="js/validator.min.js" type="text/javascript">
+</script>
+      <script type="text/javascript">
+var wow = new WOW(
+          {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       30,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         false,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+              // the callback is fired every time an animation is started
+              // the argument that is passed in is the DOM node being animated
+            }
+        }
+    );
+        wow.init();
+    </script>
+      <!-- TimeCircles JavaScript -->
+      <script type="text/javascript" src="js/TimeCircles.js">
+</script>
+      <script type="text/javascript" src="js/dateformat.js">
+</script>
+      <script type="text/javascript">
+      
+          var timer;
+            $(function(){
+                timer = $("#DateCountdown").attr('data-date', getFinishDate()).TimeCircles({
+                    direction: "Clockwise",
+                    count_past_zero: false
+                });
+                timer.start();
+                
+                // if timer elapsed
+                if(timer.getTime() <= 0){
+                    $("#price").html("К сожалению, с вашего первого визита прошло более 24х часов. Таймер истек и текущая стоимость:<br><strong>100$<\/strong>");
+                    
+                    $("#20dollars").html("<span style='height:50px'> <a href='https://www.liqpay.com/api/checkout?data=eyJ2ZXJzaW9uIjozLCJwdWJsaWNfa2V5IjoiaTI2MjYzMjM0MDQ1IiwiYW1vdW50IjoiMTAwIiwiY3VycmVuY3kiOiJVU0QiLCJkZXNjcmlwdGlvbiI6ItCj0YfQsNGB0YLQuNC1INCyINCy0LXQsdC40L3QsNGA0LUgMDguMDcuMjAxNSIsInR5cGUiOiJidXkiLCJsYW5ndWFnZSI6InJ1IiwicGF5X3dheSI6ImNhcmQscHJpdmF0MjQifQ%3D%3D&signature=JBE7fziU%2B%2FGrQuAeiA7bx7RDbUI%3D'><img style='padding-bottom: 20px'  src='img/pay40.png'><\/a><\/span>");
+                }
+                
+                // listen even tick
+                timer.addListener (function(unit, value, total){
+                    if(total <= 0){
+                        $("#price").html("К сожалению, с вашего первого визита прошло более 24х часов. Таймер истек и текущая стоимость::<br><strong>100$<\/strong>");
+                        
+                        $("#20dollars").html("<span> <a href='https://www.liqpay.com/api/checkout?data=eyJ2ZXJzaW9uIjozLCJwdWJsaWNfa2V5IjoiaTI2MjYzMjM0MDQ1IiwiYW1vdW50IjoiMTAwIiwiY3VycmVuY3kiOiJVU0QiLCJkZXNjcmlwdGlvbiI6ItCj0YfQsNGB0YLQuNC1INCyINCy0LXQsdC40L3QsNGA0LUgMDguMDcuMjAxNSIsInR5cGUiOiJidXkiLCJsYW5ndWFnZSI6InJ1IiwicGF5X3dheSI6ImNhcmQscHJpdmF0MjQifQ%3D%3D&signature=JBE7fziU%2B%2FGrQuAeiA7bx7RDbUI%3D'><img style='padding-bottom: 20px'  src='img/pay40.png'><\/a><\/span>");
+                    }
+                });
+            });
+            
+               // get stored date from local storage
+               // store current date if not exists
+               function getFinishDate() {
+                
+                var today     = new Date();
+                var daysAfterToday   = 1;
+                var tomorrow;
+                
+                // is browser support local storage
+                if(typeof(Storage) !== "undefined") {
+                 // if don't have stored value
+                 if(!localStorage.visitAt20150814_saas){
+                  localStorage.visitAt20150814_saas = today;
+                 }
+            
+                 
+                 tomorrow    = new Date(localStorage.visitAt20150814_saas);
+                 // add 3 days
+                 tomorrow.setDate(tomorrow.getDate() + daysAfterToday);
+                      
+                 return dateToString(tomorrow);
+                } else {
+                 console.log("Sorry, your browser does not support web storage...");
+                 
+                 tomorrow = new Date(today);
+                 tomorrow.setDate(today.getDate() + daysAfterToday);
+                 return dateToString(tomorrow);
+                }
+               }
+            
+            function dateToString(date){
+                return date.format("yyyy-mm-dd HH:MM") + ":00";
+            }
+            
+    </script>
+      <script>
+		document.getElementById('ButtonSubmit').onclick = function() {
+				var name = $('#Name').val();
+	            var phone = $('#Phone').val();
+	            var email = $('#Email').val();
+				var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+				var phoneFilter = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+				
+	
+				
+				
+				
+			
+		    if (
+		    $('#Name').val() == '' 		|| 
+		    $('#Phone').val() == '' 	|| 
+		    $('#Email').val() == '' 	||
+		    filter.test(email) == false ||
+		    phoneFilter.test(phone) == false
+		    
+		    ) 
+		    {
+				$("#myModal2").modal();
+		    } else {
+			    $.ajax(
+			                {
+			                    url: "https://docs.google.com/a/bp.ua/forms/d/1xJ809cf67Ta835LaZYRzvNsOL3bhA5FCtcyt_4_1MvU/formResponse",
+			                    data: 
+			                    { 
+			                            "entry_482442982":name, 
+			                            "entry_400131030":phone,
+			                            "entry_1055951992":email,
+			                             
+			                    },
+			                    type: "POST",
+			                    dataType: "xml",
+			                    
+			                });
+
+				
+				$("#myModal").modal();
+		    }
+		    return false;
+		}
+	</script>
+      <script>
+		document.getElementById('ButtonSkypeConsult').onclick = function() {
+				var name = $('#Name').val();
+	            var phone = $('#Phone').val();
+	            var email = $('#Email').val();
+	            var participate = "Хочу консультацию";
+					$.ajax(
+			                {
+			                    url: "https://docs.google.com/a/bp.ua/forms/d/1xJ809cf67Ta835LaZYRzvNsOL3bhA5FCtcyt_4_1MvU/formResponse",
+			                    data: 
+			                    {        
+			                            "entry_482442982":name, 
+			                            "entry_400131030":phone,
+			                            "entry_1055951992":email,
+			                            "entry_157663695":participate,
+			                    },
+			                    type: "POST",
+			                    dataType: "xml",
+			                    
+			                });
+
+					
+					document.getElementById("ButtonSkypeConsult").style["background-color"] = "rgba(14, 171, 86, 0.76)";
+					document.getElementById("ButtonSkypeConsult").style["border-color"] = "rgba(14, 171, 86, 0.76)";
+					$("#ButtonSkypeConsult").html("<span> <a href='https://www.liqpay.com/api/checkout?data=eyJ2ZXJzaW9uIjozLCJwdWJsaWNfa2V5IjoiaTI2MjYzMjM0MDQ1IiwiYW1vdW50IjoiNTAiLCJjdXJyZW5jeSI6IlVTRCIsImRlc2NyaXB0aW9uIjoi0J7Qv9C70LDRgtCwINC30LAg0LrQvtC90YHRg9C70YzRgtCw0YbQuNGOIiwidHlwZSI6ImJ1eSIsImxhbmd1YWdlIjoicnUiLCJwYXlfd2F5IjoiY2FyZCxwcml2YXQyNCJ9&signature=664HxCRg7zwv4hzaJjoYQa%2F6DEE%3D'><img style=''  src='img/pay50.png'><\/a><\/span>");
+					$('#ButtonSkypeConsult').removeClass('hvr-grow');
+					$('#ButtonSkypeConsult').addClass('animated flip');	
+				
+		}
+	</script>
+      <script>
+		$('#myModal').on('hidden.bs.modal', function (e) {
+ 					document.getElementById("Name").value = "";
+ 					document.getElementById("Phone").value = "";
+ 					document.getElementById("Email").value = "";
+ 					document.getElementById('formReplace').innerHTML = "<plashka class='plashka wow fadeIn animated' data-wow-duration='2s'> ✓ Заявка отправлена</plashka>";
+		});
+	</script>
+      <script>
+		window.onbeforeunload = function()
+		{
+			window.scrollTo(0,0);
+		}
+	</script>
+      <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+      <div id="lightboxOverlay" class="lightboxOverlay"></div>
+   </body>
+</html>
