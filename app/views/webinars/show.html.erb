@@ -237,7 +237,7 @@
                            <span class="fa fa-level-up"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">Вы получите алгоритм подбора юрисдикции для SAAS-проекта.</div>
+                           <div class="features-item-body__title"><%= @webinar.evolution_reason %></div>
                         </div>
                         <!-- / .features-item__body -->
                      </div>
@@ -249,7 +249,7 @@
                            <span class="fa fa-money"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">Узнаете как можно оптимизировать налоги.</div>
+                           <div class="features-item-body__title"><%= @webinar.money_reason %></div>
                         </div>
                         <!-- / .features-item__body -->
                      </div>
@@ -261,7 +261,7 @@
                            <span class="fa fa-users "></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">Получите механизмы регуляции отношений между акционерами.</div>
+                           <div class="features-item-body__title"><%= @webinar.comunication_reason %></div>
                         </div>
                         <!-- / .features-item__body -->
                      </div>
@@ -273,7 +273,7 @@
                            <span class="fa fa-life-ring"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">Научитесь определять какую часть интеллектуальной собственности необходимо защищать в Вашем проекте.</div>
+                           <div class="features-item-body__title"><%= @webinar.target_reason %></div>
                         </div>
                         <!-- / .features-item__body -->
                      </div>
@@ -311,8 +311,8 @@
                            <span class="fa fa-gamepad"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">Для команд</div>
-                           <div class="features-item-body__summary" style="text-transform: uppercase">разработчиков облачных сервисов</div>
+                           <div class="features-item-body__title"><%= @webinar.for_one %></div>
+                           <div class="features-item-body__summary" style="text-transform: uppercase"><%= @webinar.for_one_description %></div>
                         </div>
                         <!-- / .features-item__body -->
                      </div>
@@ -324,10 +324,10 @@
                            <span class="fa fa-users"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">Для руководителей
+                           <div class="features-item-body__title"><%= @webinar.for_two %>
                               <br>
                            </div>
-                           <div class="features-item-body__summary" tyle="text-transform: uppercase"> SAAS-проектов</div>
+                           <div class="features-item-body__summary" tyle="text-transform: uppercase"> <%= @webinar.for_two_description %></div>
                         </div>
                         <!-- / .features-item__body -->
                      </div>
@@ -339,8 +339,8 @@
                            <span class="fa fa-user"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">Для акционеров</div>
-                           <div class="features-item-body__summary" tyle="text-transform: uppercase">SAAS-проектов</div>
+                           <div class="features-item-body__title"><%= @webinar.for_three %></div>
+                           <div class="features-item-body__summary" tyle="text-transform: uppercase"><%= @webinar.for_three_description %></div>
                         </div>
                         <!-- / .features-item__body -->
                      </div>
@@ -352,8 +352,8 @@
                            <span class="fa fa-user-plus"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">Для программистов</div>
-                           <div class="features-item-body__summary" tyle="text-transform: uppercase">которые хотят защитить свои права работая над SAAS сервисом</div>
+                           <div class="features-item-body__title"><%= @webinar.for_four %></div>
+                           <div class="features-item-body__summary" tyle="text-transform: uppercase"><%= @webinar.for_four_description %></div>
                         </div>
                         <!-- / .features-item__body -->
                      </div>
@@ -531,7 +531,7 @@
                            <span class="oi oi-timer" style="position:relative; top:-10px"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">ДЛИТЕЛЬНОСТЬ - 2 ЧАСА
+                           <div class="features-item-body__title"><%= @webinar.duration %>
 </div>
                         </div>
                         <!-- / .features-item__body -->
@@ -544,7 +544,7 @@
                            <span class="oi oi-map-marker" style="position:relative; top:-7px"></span>
                         </div>
                         <div class="features-item__body">
-                           <div class="features-item-body__title">УЧАСТИЕ ИЗ ЛЮБОГО ГОРОДА
+                           <div class="features-item-body__title"<%= @webinar.place %>
 </div>
                         </div>
                         <!-- / .features-item__body -->

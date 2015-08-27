@@ -4,6 +4,6 @@ class WebinarsController < ApplicationController
   end
 
   def index
-  	@webinar = Webinar.last
+  	@webinars = Webinar.first(3)
   end
 end

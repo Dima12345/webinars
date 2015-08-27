@@ -14,7 +14,8 @@
                </div>
             </div>             
             <!-- / .row -->
-            <div class="row">
+            <div class="row" style="text-align:center;">
+            <!--
                <div class="col-sm-4" style="background:white; padding-top:20px; padding-bottom:-20px; border-radius:10px; overflow:hidden; margin:10px; ">
                   <div class="corner-ribbon top-left red shadow" style="; z-index:1;">Завершено</div>
                   <div class="team__item" style="opacity:0.5">
@@ -37,60 +38,38 @@
                      <div class="row" style="text-align:center">
                         <a class="btn btn-primary" href="http://webinar.baturinets.com/bm">ПОДРОБНЕЕ</a>
                      </div>                      
-                     <!-- / .row -->
+                     
                   </div>                   
-                  <!-- / .team__item -->                   
+                               
                </div>
-               <div class="col-sm-4 margin_column" style="background:white; padding-top:20px; padding-bottom:-20px; border-radius: 10px; margin: 10px; overflow:hidden;">
-                  <div class="team__item">
-                     <h4 class="heading heading_title"><%= @webinar.name %></h4>
-                     <div class="team-item__img">
-                        <img src="assets/team_2.jpg" class="img-responsive" alt="...">
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="team-item__name"><%= @webinar.data %></div>
-                           <div class="team-item__position"><%= @webinar.city %></div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="team-item__contact">
-                              <strong style="font-size:22px"><%= @webinar.time %></strong>
-                              <div class="clearfix"></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row" style="text-align:center">
-                        <a class="btn btn-primary" href="<%= webinars_show_path(@webinar) %>">ПОДРОБНЕЕ</a>
-                     </div>                      
-                     <!-- / .row -->
-                  </div>                   
-                  <!-- / .team__item -->                   
-               </div>
-               <div class="col-sm-4 margin_column" style="background:white; padding-top:20px; padding-bottom:-20px; border-radius: 10px; margin:10px; overflow:hidden;">
-                  <div class="team__item">
-                     <h4 class="heading heading_title">ИНТЕЛЛЕКТУАЛЬНАЯ СОБСТВЕННОСТЬ HARDWARE-СТАРТАПА</h4>
-                     <div class="team-item__img">
-                        <img src="assets/team_2.jpg" class="img-responsive" alt="...">
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="team-item__name">17 АВГУСТА</div>
-                           <div class="team-item__position">КИЕВ</div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="team-item__contact">
-                              <strong style="font-size:22px">19.00</strong>
-                              <div class="clearfix"></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row" style="text-align:center">
-                        <a class="btn btn-primary" href="<%= webinars_show_path(@webinar.id) %>">ПОДРОБНЕЕ</a>
-                     </div>                      
-                     <!-- / .row -->
-                  </div>                   
-                  <!-- / .team__item -->                   
-               </div>
+               -->
+               <% @webinars.each do |webinar| %> 
+                 <div class="col-sm-4 margin_column" style="background:white; padding-top:20px; padding-bottom:-20px; border-radius: 10px; margin: 10px; overflow:hidden;">
+                    <div class="team__item">
+                       <h4 class="heading heading_title"><%= webinar.name %></h4>
+                       <div class="team-item__img">
+                          <img src="assets/team_2.jpg" class="img-responsive" alt="...">
+                       </div>
+                       <div class="row">
+                          <div class="col-md-6">
+                             <div class="team-item__name"><%= webinar.data %></div>
+                             <div class="team-item__position"><%= webinar.city %></div>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="team-item__contact">
+                                <strong style="font-size:22px"><%= webinar.time %></strong>
+                                <div class="clearfix"></div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="row" style="text-align:center">
+                          <a class="btn btn-primary" href="<%= webinars_show_path(webinar) %>">ПОДРОБНЕЕ</a>
+                       </div>                      
+                       <!-- / .row -->
+                    </div>                   
+                    <!-- / .team__item -->                   
+                 </div>
+               <% end %>
             </div>             
             <!-- / .row -->
          </div>          
