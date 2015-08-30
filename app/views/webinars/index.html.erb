@@ -45,19 +45,25 @@
                -->
                <% @webinars.each do |webinar| %> 
                  <div class="col-sm-4 margin_column" style="background:white; padding-top:20px; padding-bottom:-20px; border-radius: 10px; margin: 10px; overflow:hidden;">
-                    <div class="team__item">
+                  <% if webinar.date_time < Time.now %>
+                    <div class="corner-ribbon top-left red shadow" style="; z-index:1;">Завершено</div>
+                  <% end %>
+                    <div class="team__item" <% if webinar.date_time < Time.now %>style='opacity: 0.5;'<% end %> >
                        <h4 class="heading heading_title"><%= webinar.name %></h4>
                        <div class="team-item__img">
                           <img src="assets/team_2.jpg" class="img-responsive" alt="...">
                        </div>
                        <div class="row">
                           <div class="col-md-6">
-                             <div class="team-item__name"><%= webinar.data %></div>
+                             <div class="team-item__name"><%= webinar.date_time.day %> <%= transform_month(webinar.date_time.month) %></div>
                              <div class="team-item__position"><%= webinar.city %></div>
                           </div>
                           <div class="col-md-6">
                              <div class="team-item__contact">
-                                <strong style="font-size:22px"><%= webinar.time %></strong>
+                                <strong style="font-size:22px"><%= webinar.date_time.hour %>.<% if webinar.date_time.min < 10 %>0<%= webinar.date_time.min %>
+                                <% else %><%= webinar.date_time.min %>
+                                <% end %>
+                                </strong>
                                 <div class="clearfix"></div>
                              </div>
                           </div>

@@ -6,8 +6,7 @@ ActiveAdmin.register Webinar do
   #
   permit_params :name,
                 :subname,
-                :data,
-                :time,
+                :date_time,
                 :city,
                 :descriptions,
                 :link_to_video,

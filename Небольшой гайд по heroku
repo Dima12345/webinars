@@ -1,0 +1,9 @@
+1) Для работы с heroku нужно зайти и скачать софт https://toolbelt.heroku.com/
+2) Вероятно нужно залогиниться "heroku login"
+3) Для того, чтобы запушить на heroku нужно после "git push" провести команду "git push heroku"
+4) Если были изменения в БД нужно на heroku провести миграции командой "heroku run rake db:migrate"
+5) В случае потребности посмотреть логи есть команда "heroku logs"
+
+Также есть другие комманды heroku, их можно посмотреть по адресу https://devcenter.heroku.com/articles/heroku-command
+
+Туториал по Rails можно найти по адресу http://railstutorial.ru/chapters/4_0/beginning#book_menu

@@ -1,9 +1,10 @@
 class WebinarsController < ApplicationController
   def show
-  	@webinar = Webinar.last
+    @webinar = Webinar.find(params["id"].to_i)
   end
 
   def index
-  	@webinars = Webinar.first(3)
+    @webinars = Webinar.all
+    @webinars = @webinars.sort_by{ |webinar| webinar.date_time }
   end
 end

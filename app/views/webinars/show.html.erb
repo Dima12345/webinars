@@ -91,7 +91,9 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#home"><%= @webinar.data %> | <%= @webinar.time %></a>
+                  <a class="navbar-brand" href="#home"><%= @webinar.date_time.day %> <%= transform_month(@webinar.date_time.month) %> | <%= @webinar.date_time.hour %>.<% if @webinar.date_time.min < 10 %>0<%= @webinar.date_time.min %>
+                                <% else %><%= @webinar.date_time.min %>
+                                <% end %></a>
                </div>
                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                   <ul class="nav navbar-nav navbar-right ">
